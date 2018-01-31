@@ -7,5 +7,5 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  if (let )
+  for (let i = 0; i < katzDeliLine.length; i--)
 }
