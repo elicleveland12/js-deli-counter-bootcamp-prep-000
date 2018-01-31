@@ -8,11 +8,11 @@ function takeANumber(katzDeliLine, name) {
 
 function nowServing(katzDeliLine) {
   for (let i = 0; i < katzDeliLine.length; --i) {
-    if (katzDeliLine !== null) {
-      return `Currently serving ${katzDeliLine[0]}.`;
+    if (katzDeliLine === null) {
+      return "There is nobody waiting to be served!";
     }
     else {
-      return "There is nobody waiting to be served!";
+      return `Currently serving ${katzDeliLine[0]}.`;
     }
   }
 }
