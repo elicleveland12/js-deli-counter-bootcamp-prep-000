@@ -7,7 +7,7 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  while () {
+  while (katzDeliLine.length > 0) {
     if (katzDeliLine > null) {
       return "Currently serving " + katzDeliLine[0] + ".";
     }
