@@ -1,4 +1,3 @@
-var katzDeli = [];
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
@@ -11,7 +10,7 @@ function nowServing(katzDeliLine) {
     return "There is nobody waiting to be served!";
   } else {
     var name = katzDeliLine[0];
-    katzDeliLine.splice(0, 1);
+    katzDeliLine.shift();
     return "Currently serving " + name + ".";
   }
 }
@@ -25,7 +24,7 @@ function currentLine(katzDeliLine) {
     for(var i = 0; i < katzDeliLine.length; i++) {
       names += (i + 1) + ". " + katzDeliLine[i] + ", ";
     }
-    names = names.slice(0, names.length-2);
+    names = names.slice(0, names.length-1);
     return "The line is currently: " + names; 
   }
 }
